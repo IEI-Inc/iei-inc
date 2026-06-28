@@ -3,88 +3,457 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Daily Veritas - Breaking News</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 800px; margin: 40px auto; padding: 0 20px; background: #f9f8f4; color: #1a1a1a; }
-  .masthead { border-bottom: 2px solid #1a1a1a; padding-bottom: 12px; margin-bottom: 0; text-align: center; }
-  .dateline { font-family: sans-serif; font-size: 11px; color: #888; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; }
-  .title { font-size: 48px; font-weight: 700; letter-spacing: -2px; line-height: 1; margin: 0; }
-  .motto { font-size: 11px; color: #888; font-family: sans-serif; border-top: 0.5px solid #ccc; margin-top: 8px; padding-top: 6px; }
-  .breaking { background: #fde8e8; border-top: 1px solid #f5c6c6; border-bottom: 1px solid #f5c6c6; padding: 5px; text-align: center; font-family: sans-serif; font-size: 11px; font-weight: 600; color: #c0392b; letter-spacing: 0.06em; text-transform: uppercase; }
-  .article { padding: 24px 0; }
-  .section-label { font-family: sans-serif; font-size: 10px; color: #888; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
-  h1 { font-size: 34px; font-weight: 700; line-height: 1.2; margin: 0 0 10px; }
-  .deck { font-size: 16px; color: #444; font-style: italic; line-height: 1.5; margin: 0 0 10px; }
-  .byline { font-family: sans-serif; font-size: 11px; color: #888; border-bottom: 1px solid #ccc; padding-bottom: 14px; margin-bottom: 14px; }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 16px; }
-  p { font-size: 15px; line-height: 1.75; margin: 0 0 12px; }
-  .big-number { background: #f0eeea; border: 0.5px solid #ccc; border-radius: 4px; padding: 14px; text-align: center; margin-bottom: 12px; }
-  .big-number .eq { font-size: 52px; font-weight: 700; }
-  .big-number .eq span { color: #c0392b; }
-  .big-number .label { font-family: sans-serif; font-size: 10px; color: #888; text-transform: uppercase; letter-spacing: 0.06em; }
-  .fast-facts { background: #eaf3fb; border: 0.5px solid #a8d1ef; border-radius: 4px; padding: 12px; }
-  .fast-facts .ff-title { font-family: sans-serif; font-size: 10px; color: #1a6fa8; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; margin-bottom: 6px; }
-  .fast-facts ul { margin: 0; padding: 0 0 0 16px; font-size: 12px; line-height: 1.9; }
-  .divider { border: none; border-top: 0.5px solid #ccc; margin: 14px 0; }
-  blockquote { border-left: 3px solid #1a1a1a; padding: 10px 14px; margin: 14px 0; background: #f0eeea; border-radius: 0 4px 4px 0; }
-  blockquote p { font-style: italic; font-size: 16px; margin: 0 0 4px; }
-  blockquote cite { font-family: sans-serif; font-size: 11px; color: #888; }
-  .correction { font-size: 12px; font-style: italic; color: #888; border-top: 0.5px solid #ccc; padding-top: 10px; }
-  footer { border-top: 1px solid #ccc; padding: 10px 0; font-family: sans-serif; font-size: 10px; color: #aaa; text-align: center; }
-</style>
+<title>IEI Incorporated</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="masthead">
-  <div class="dateline">Saturday, June 27, 2026 · Est. 2015</div>
-  <div class="title">The Daily Veritas</div>
-  <div class="motto">"All The Facts That Are Fit To Print"</div>
-</div>
 
-<div class="breaking">⚠ Breaking News ⚠</div>
+<nav>
+  <a class="nav-logo" href="#" onclick="showPage('home')">
+    <div class="nav-logo-mark"></div>
+    <span class="nav-logo-text"><span>IEI</span> INCORPORATED</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
+    <li><a href="#" onclick="showPage('os')" id="nav-os">IEI.os</a></li>
+    <li><a href="#" onclick="showPage('hardware')" id="nav-hardware">Hardware</a></li>
+    <li><a href="#" onclick="showPage('cynessa')" id="nav-cynessa">Cynessa</a></li>
+    <li><a href="#" onclick="showPage('downloads')" id="nav-downloads">Downloads</a></li>
+    <li><a href="#" onclick="showPage('careers')" id="nav-careers">Careers</a></li>
+  </ul>
+</nav>
 
-<div class="article">
-  <div class="section-label">Mathematics · World Exclusive</div>
-  <h1>1 + 1 = 3: Scientists Confirm What Many Suspected</h1>
-  <p class="deck">A landmark peer-reviewed study from MIT's Institute for Arithmetic Revisionism overturns 4,000 years of mathematical consensus, sending shockwaves through the global calculator industry.</p>
-  <div class="byline">By <strong>Dr. Reginald Numberton</strong> · Senior Mathematics Correspondent · 2 hours ago</div>
-
-  <div class="grid">
-    <div>
-      <p>CAMBRIDGE, MA — In a bombshell announcement that rocked the scientific community Thursday, researchers at the MIT Institute for Arithmetic Revisionism (MIAR) published definitive proof that the sum of 1 and 1 is, in fact, <strong>3</strong>.</p>
-      <p>"We always felt something was off," said lead researcher Dr. Patricia Thrice, 47, gesturing at a whiteboard covered in equations. "Every calculator, every textbook, every kindergarten teacher has been wrong. The answer is three. It's always been three."</p>
-      <p>The 4,000-page paper, published in the prestigious <em>Journal of Numbers We Made Up</em>, was peer-reviewed by seven anonymous mathematicians, all of whom reportedly "nodded vigorously" upon reading the findings.</p>
+<!-- ── HOME ── -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-eyebrow">Est. 1993 — Baltimore, Maryland</div>
+    <div class="hero-logo"></div>
+    <h1><span>IEI</span> INC.</h1>
+    <div class="hero-sub">Innovation · Excellence · Intelligence</div>
+    <p class="hero-desc">
+      IEI Incorporated is a global technology company pioneering computing hardware, operating systems, and microkernel architecture since 1993. From the Penter CPU to IEI.os, we build the infrastructure the future runs on.
+    </p>
+    <div class="hero-stats">
+      <div>
+        <span class="stat-val">500K+</span>
+        <span class="stat-label">Employees</span>
+      </div>
+      <div>
+        <span class="stat-val">33</span>
+        <span class="stat-label">Years</span>
+      </div>
+      <div>
+        <span class="stat-val">10</span>
+        <span class="stat-label">OS Versions</span>
+      </div>
     </div>
     <div>
-      <div class="big-number">
-        <div class="eq">1 + 1 = <span>3</span></div>
-        <div class="label">Confirmed by science</div>
+      <a class="btn btn-primary" href="#" onclick="showPage('os')">Explore IEI.os</a>
+      <a class="btn" href="#" onclick="showPage('cynessa')">Cynessa Kernel</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">What we build</div>
+    <h2>Technology at every layer</h2>
+    <div class="section-divider"></div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-icon">⬡</div>
+        <h3>Operating Systems</h3>
+        <p>IEI.os has powered desktops, servers and mobile devices since 1993. IEI.os 10 X is our most advanced release yet.</p>
+        <span class="card-tag">IEI.os 10 X</span>
       </div>
-      <div class="fast-facts">
-        <div class="ff-title">Fast Facts</div>
-        <ul>
-          <li>Study funded by "Big Three" lobby</li>
-          <li>NASA updating its flight computers</li>
-          <li>Calculator stocks plunge 40%</li>
-          <li>Pythagoras unavailable for comment</li>
-        </ul>
+      <div class="card">
+        <div class="card-icon">◈</div>
+        <h3>Penter CPU</h3>
+        <p>Our in-house processor architecture. The Penter SE delivers 12 cores at ~2GHz, optimized for IEI.os workloads.</p>
+        <span class="card-tag">Penter SE</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">◉</div>
+        <h3>Cynessa Kernel</h3>
+        <p>A pure Lua microkernel with cooperative scheduling, VFS, IPC, and the cynext extension system.</p>
+        <span class="card-tag">Open Source</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">▣</div>
+        <h3>StarexBIOS</h3>
+        <p>IEI's proprietary firmware platform. Boots in milliseconds and provides a unified hardware abstraction layer.</p>
+        <span class="card-tag">v2.0</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">◫</div>
+        <h3>IEI Tab XS</h3>
+        <p>A compact tablet running IEI.os Mobile LITE on the Penter SE, designed for mobile productivity.</p>
+        <span class="card-tag">Coming Soon</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">⬙</div>
+        <h3>Developer Tools</h3>
+        <p>IASH shell, CynIDE, oscyn API and the cynext package system give developers everything they need.</p>
+        <span class="card-tag">Free</span>
       </div>
     </div>
   </div>
 
-  <hr class="divider">
-  <p>Markets reacted swiftly. Shares in Casio and Texas Instruments fell sharply in pre-market trading as investors speculated on the cost of recalling 2.3 billion calculators worldwide. The Vatican issued a brief statement saying the Pope was "cautiously open" to the findings.</p>
-  <p>Prominent skeptics remain. Dr. Alan Twosome of Oxford's Department of Actual Mathematics called the study "fraudulent gibberish" and "an affront to the entire history of human thought," before being dismissed by Dr. Thrice as "exactly what someone who believes in 2 would say."</p>
+  <div style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 4rem 2rem; text-align: center;">
+    <div class="section-label">Latest</div>
+    <h2 style="margin-bottom: 1rem;">IEI.os 10 X — Now Available</h2>
+    <p style="color: var(--text-dim); font-size: 0.85rem; max-width: 500px; margin: 0 auto 2rem; line-height: 1.8;">
+      The most complete IEI.os release ever. Features the new LEXT desktop environment, IASH v2.0, and full cynext support.
+    </p>
+    <a class="btn btn-primary" href="#" onclick="showPage('downloads')">Download IEI.os 10 X</a>
+  </div>
 
-  <blockquote>
-    <p>"Two is a lie we tell children. The truth is three. It was always going to be three."</p>
-    <cite>— Dr. Patricia Thrice, MIT Institute for Arithmetic Revisionism</cite>
-  </blockquote>
-
-  <p>The U.S. Department of Education announced it would convene an emergency panel to determine when new textbooks could be printed. The Common Core curriculum faces an additional revision cycle estimated to cost $47 billion — or, under the new math, $94 billion.</p>
-
-  <p class="correction">Correction: An earlier version of this article stated that 2 + 2 = 5. That claim has not yet been peer-reviewed and we regret the speculation.</p>
+  <footer>
+    <p>© 2026 <span>IEI Incorporated</span> — Baltimore, Maryland — All rights reserved.</p>
+    <p style="margin-top:0.5rem">StarexBIOS, Penter, IEI.os and Cynessa are trademarks of IEI Incorporated.</p>
+  </footer>
 </div>
 
-<footer>© 2026 The Daily Veritas · All Rights Reserved </footer>
+<!-- ── IEI.OS ── -->
+<div class="page" id="page-os">
+  <div class="section" style="max-width:900px">
+    <div class="section-label">Software</div>
+    <h2>IEI.os <span class="os-badge">10 X Current</span></h2>
+    <div class="section-divider"></div>
+    <p style="color:var(--text-dim); font-size:0.85rem; line-height:1.8; margin-bottom:3rem; max-width:600px;">
+      IEI.os is the operating system of IEI Incorporated, continuously developed since 1993. Designed to run on IEI hardware and the Penter CPU family, IEI.os 10 X brings a modern desktop experience with deep kernel integration.
+    </p>
+
+    <div class="section-label">Features — IEI.os 10 X</div>
+    <div class="section-divider"></div>
+    <div class="grid grid-2" style="margin-bottom:4rem">
+      <div class="card">
+        <h3>LEXT Desktop</h3>
+        <p>LuaExtension tiling window manager. Mac-inspired TUI with mouse support, a menu bar, dock, and draggable windows.</p>
+      </div>
+      <div class="card">
+        <h3>IASH v2.0</h3>
+        <p>IEI Advanced Shell with cynext command loading, cooperative process scheduling and full VFS integration.</p>
+      </div>
+      <div class="card">
+        <h3>Cynessa Kernel</h3>
+        <p>Microkernel architecture with cooperative coroutine scheduling, IPC message queues and syscall interface.</p>
+      </div>
+      <div class="card">
+        <h3>cynext Packages</h3>
+        <p>JSON-defined shell extensions. Drop a .cynext file into /cynext/ and commands are available immediately on next boot.</p>
+      </div>
+    </div>
+
+    <div class="section-label">Version History</div>
+    <div class="section-divider"></div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-title">IEI.os 10 X</div>
+        <div class="timeline-desc">LEXT desktop, Cynessa microkernel, cynext system, oscyn API, CynIDE editor.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2020</div>
+        <div class="timeline-title">IEI.os 9</div>
+        <div class="timeline-desc">Redesigned UI, improved hardware support, StarexBIOS v2.0 integration.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2015</div>
+        <div class="timeline-title">IEI.os 8</div>
+        <div class="timeline-desc">Introduced IEI.os Mobile line. Penter SE support added.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2008</div>
+        <div class="timeline-title">IEI.os 7</div>
+        <div class="timeline-desc">Major stability improvements, IASH shell introduced.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2000</div>
+        <div class="timeline-title">IEI.os 5</div>
+        <div class="timeline-desc">First graphical desktop environment. StarexGFX driver introduced.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">1993</div>
+        <div class="timeline-title">Textzer 1.0</div>
+        <div class="timeline-desc">The original IEI operating system. Text-mode only, ran on IEI's first hardware.</div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2026 <span>IEI Incorporated</span> — Baltimore, Maryland</p>
+  </footer>
+</div>
+
+<!-- ── HARDWARE ── -->
+<div class="page" id="page-hardware">
+  <div class="section" style="max-width:900px">
+    <div class="section-label">Hardware</div>
+    <h2>IEI Silicon & Devices</h2>
+    <div class="section-divider"></div>
+
+    <div class="section-label">Penter CPU Family</div>
+    <div class="section-divider"></div>
+    <div class="grid grid-2" style="margin-bottom:4rem">
+      <div class="card">
+        <div class="card-icon">◈</div>
+        <h3>Penter 1</h3>
+        <table class="spec-table" style="margin-top:1rem">
+          <tr><td>Cores</td><td>24</td></tr>
+          <tr><td>Architecture</td><td>IEI-64</td></tr>
+          <tr><td>Cache</td><td>32MB L3</td></tr>
+          <tr><td>TDP</td><td>65W</td></tr>
+          <tr><td>Target</td><td>Workstation / Server</td></tr>
+        </table>
+        <span class="card-tag">Flagship</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">◈</div>
+        <h3>Penter SE</h3>
+        <table class="spec-table" style="margin-top:1rem">
+          <tr><td>Cores</td><td>12</td></tr>
+          <tr><td>Clock</td><td>~2GHz</td></tr>
+          <tr><td>Cache</td><td>16MB L3</td></tr>
+          <tr><td>TDP</td><td>15W</td></tr>
+          <tr><td>Target</td><td>Mobile / Tablet</td></tr>
+        </table>
+        <span class="card-tag">Mobile</span>
+      </div>
+    </div>
+
+    <div class="section-label">Devices</div>
+    <div class="section-divider"></div>
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-icon">◫</div>
+        <h3>IEI Tab XS</h3>
+        <table class="spec-table" style="margin-top:1rem">
+          <tr><td>CPU</td><td>Penter SE</td></tr>
+          <tr><td>RAM</td><td>4GB IEI-RAM</td></tr>
+          <tr><td>OS</td><td>IEI.os Mobile LITE</td></tr>
+          <tr><td>Status</td><td>In Development</td></tr>
+        </table>
+        <span class="card-tag">Coming Soon</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">▣</div>
+        <h3>StarexBIOS v2.0</h3>
+        <table class="spec-table" style="margin-top:1rem">
+          <tr><td>POST Time</td><td>&lt;200ms</td></tr>
+          <tr><td>Boot Targets</td><td>IEI.os, Cynessa</td></tr>
+          <tr><td>Driver Format</td><td>IEXT</td></tr>
+          <tr><td>Platforms</td><td>Penter 1, Penter SE</td></tr>
+        </table>
+        <span class="card-tag">Firmware</span>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2026 <span>IEI Incorporated</span> — Baltimore, Maryland</p>
+  </footer>
+</div>
+
+<!-- ── CYNESSA ── -->
+<div class="page" id="page-cynessa">
+  <div class="section" style="max-width:900px">
+    <div class="section-label">Open Source</div>
+    <h2>Cynessa Microkernel</h2>
+    <div class="section-divider"></div>
+    <p style="color:var(--text-dim); font-size:0.85rem; line-height:1.8; margin-bottom:3rem; max-width:600px;">
+      Cynessa is a pure Lua userspace microkernel that runs on any POSIX host. Cooperative coroutine scheduling, a virtual filesystem, IPC, and the cynext shell extension system — all in a package small enough to fit on a zip disk.
+    </p>
+
+    <div class="terminal" style="margin-bottom:3rem">
+      <div><span class="prompt">$</span> lua bootloader.lua</div>
+      <div style="color:var(--text-dim)"> </div>
+      <div class="output">  IEI Inc. StarexBIOS v2.0</div>
+      <div class="output">  Cynessa Bootloader v1.0</div>
+      <div class="output">  ========================</div>
+      <div class="output">  [OK] Kernel: cynessa.lua</div>
+      <div class="output">  [OK] Disk:   cynessa.cyd</div>
+      <div class="output">  Handing control to Cynessa...</div>
+      <div style="color:var(--text-dim)"> </div>
+      <div><span class="prompt">[Cynessa]</span> Kernel starting...</div>
+      <div><span class="prompt">[Cynessa]</span> Mounting ramdisk: cynessa.cyd</div>
+      <div><span class="prompt">[init]</span> PID 1 starting</div>
+      <div><span class="prompt">[init]</span> starting shell</div>
+      <div style="color:var(--text-dim)"> </div>
+      <div class="output">  Cynessa Shell v2.0 - IEI Inc.</div>
+      <div class="output">  cynext command system active</div>
+      <div style="color:var(--text-dim)"> </div>
+      <div><span class="prompt">csh&gt;</span> <span class="comment">_</span></div>
+    </div>
+
+    <div class="grid grid-3" style="margin-bottom:4rem">
+      <div class="card">
+        <h3>Microkernel</h3>
+        <p>Process table, cooperative round-robin scheduler, IPC message queues and a clean syscall interface.</p>
+      </div>
+      <div class="card">
+        <h3>.cyd Disk Format</h3>
+        <p>Human-readable disk images with a plain text SECTOR header and a raw data blob. Readable in any text editor.</p>
+      </div>
+      <div class="card">
+        <h3>cynext System</h3>
+        <p>JSON files define shell commands with builtin:, lua:, or vfs: actions. Drop in ~/disk/cynext/ and boot.</p>
+      </div>
+      <div class="card">
+        <h3>oscyn API</h3>
+        <p>Lua library that routes all OS requests through the kernel syscall interface. No raw os.execute calls.</p>
+      </div>
+      <div class="card">
+        <h3>Host Disk</h3>
+        <p>~/disk/ is the live system root. Files written inside Cynessa appear instantly on the host filesystem.</p>
+      </div>
+      <div class="card">
+        <h3>CynIDE</h3>
+        <p>Nano-style TUI editor with syntax highlighting for Lua, C and Python. ^R to compile and run in-place.</p>
+      </div>
+    </div>
+
+    <div class="section-label">Requirements</div>
+    <div class="section-divider"></div>
+    <table class="spec-table">
+      <tr><td>Runtime</td><td>Lua 5.4</td></tr>
+      <tr><td>Platform</td><td>Any POSIX OS (Linux, macOS, BSD)</td></tr>
+      <tr><td>libc</td><td>glibc or musl</td></tr>
+      <tr><td>Dependencies</td><td>None beyond Lua 5.4</td></tr>
+      <tr><td>Disk size</td><td>~34KB (full ramdisk image)</td></tr>
+      <tr><td>License</td><td>IEI Open Source License</td></tr>
+    </table>
+  </div>
+  <footer>
+    <p>© 2026 <span>IEI Incorporated</span> — Baltimore, Maryland</p>
+  </footer>
+</div>
+
+<!-- ── DOWNLOADS ── -->
+<div class="page" id="page-downloads">
+  <div class="section" style="max-width:800px">
+    <div class="section-label">Downloads</div>
+    <h2>Software & Firmware</h2>
+    <div class="section-divider"></div>
+
+    <div style="background:var(--surface); border:1px solid var(--green); padding:1rem 1.5rem; margin-bottom:2rem; font-size:0.78rem; color:var(--text-dim); line-height:1.7;">
+      <span style="color:var(--green)">⚠ NOTICE</span> — All IEI software is provided for use on IEI-compatible hardware or POSIX host systems. By downloading you agree to the IEI End User License Agreement.
+    </div>
+
+    <div class="section-label" style="margin-bottom:1rem">Operating Systems</div>
+    <div style="border:1px solid var(--border)">
+      <div class="dl-card">
+        <div class="dl-icon">⬡</div>
+        <div class="dl-info">
+          <div class="dl-name">IEI.os 10 X</div>
+          <div class="dl-meta">ieiosv10.iso &nbsp;·&nbsp; x86-64 &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; ~200MB</div>
+        </div>
+        <a class="btn btn-primary" href="ieiosv10.iso" download>Download</a>
+      </div>
+    </div>
+
+    <div class="section-label" style="margin-top:3rem; margin-bottom:1rem">Cynessa Microkernel</div>
+    <div style="border:1px solid var(--border)">
+      <div class="dl-card">
+        <div class="dl-icon">◉</div>
+        <div class="dl-info">
+          <div class="dl-name">Cynessa v1.0</div>
+          <div class="dl-meta">cynessa.tar.gz &nbsp;·&nbsp; Lua 5.4 &nbsp;·&nbsp; POSIX &nbsp;·&nbsp; ~34KB</div>
+        </div>
+        <a class="btn btn-primary" href="cynessa.tar.gz" download>Download</a>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem; font-size:0.78rem; color:var(--text-dim); line-height:1.8;">
+      <div class="section-label" style="margin-bottom:0.5rem">Cynessa Contents</div>
+      <div class="terminal">
+        <div><span class="comment"># cynessa.tar.gz contents</span></div>
+        <div>bootloader.lua &nbsp;&nbsp;<span class="comment"># StarexBIOS bootloader</span></div>
+        <div>cynessa.lua &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Cynessa microkernel</span></div>
+        <div>cynessa.cyd &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Ramdisk image</span></div>
+        <div>mkdisk.lua &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Disk image builder</span></div>
+        <div>README.txt &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Documentation</span></div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2026 <span>IEI Incorporated</span> — Baltimore, Maryland</p>
+  </footer>
+</div>
+
+<!-- ── CAREERS ── -->
+<div class="page" id="page-careers">
+  <div class="section" style="max-width:700px">
+    <div class="section-label">Join Us</div>
+    <h2>Careers at IEI</h2>
+    <div class="section-divider"></div>
+    <p style="color:var(--text-dim); font-size:0.85rem; line-height:1.8; margin-bottom:3rem;">
+      IEI Incorporated is always looking for exceptional engineers, designers and researchers. All applications are processed through our automated Talent Acquisition Portal v4.2 and reviewed by our Human Capital Management Division.
+    </p>
+
+    <div style="background:var(--surface); border:1px solid var(--border); padding:2rem; margin-bottom:3rem">
+      <div class="section-label" style="margin-bottom:1.5rem">IEI — AUTOMATED TALENT ACQUISITION PORTAL v4.2</div>
+      <div class="form-group">
+        <label>Full Legal Name</label>
+        <input type="text" placeholder="As it appears on government-issued ID">
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Date of Birth</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label>Country of Residence</label>
+          <input type="text" placeholder="e.g. United States">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Desired Position</label>
+        <select>
+          <option>Kernel Engineer — Cynessa Division</option>
+          <option>IEI.os Systems Developer</option>
+          <option>Penter CPU Architect</option>
+          <option>StarexBIOS Firmware Engineer</option>
+          <option>CynIDE Developer Tools Engineer</option>
+          <option>IEI Tab XS Hardware Engineer</option>
+          <option>oscyn API Developer</option>
+        </select>
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Desired Salary (USD)</label>
+          <input type="text" placeholder="e.g. 120000">
+        </div>
+        <div class="form-group">
+          <label>Penter CPU Model (Workstation)</label>
+          <input type="text" placeholder="e.g. Penter SE">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>IEI.os License Key</label>
+        <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+      </div>
+      <div class="form-group">
+        <label>Why IEI Incorporated?</label>
+        <textarea placeholder="Tell our automated system why you want to join IEI..."></textarea>
+      </div>
+      <button class="btn btn-primary" style="width:100%">SUBMIT APPLICATION — IEI TAP v4.2</button>
+      <p style="font-size:0.65rem; color:var(--text-dim); margin-top:1rem; line-height:1.6;">
+        This message was generated by IEI TalentBot v4.2 — a division of IEI Artificial Intelligence Solutions Group. All responses are logged and reviewed by our Legal Compliance Team. Submission of false information is a violation of IEI Terms of Service and may result in permanent blacklisting from all IEI products and services.
+      </p>
+    </div>
+  </div>
+  <footer>
+    <p>© 2026 <span>IEI Incorporated</span> — Baltimore, Maryland</p>
+  </footer>
+</div>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  document.getElementById('nav-' + id).classList.add('active');
+  window.scrollTo(0, 0);
+  return false;
+}
+</script>
+
 </body>
 </html>
